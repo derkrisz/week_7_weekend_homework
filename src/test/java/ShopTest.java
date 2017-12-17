@@ -102,5 +102,23 @@ public class ShopTest {
         assertEquals(1165.0, shop.totalProfit(), 0.01);
     }
 
+    @Test
+    public void canSellItem() {
+        shop.addToStock(guitar);
+        shop.addToStock(guitar2);
+        shop.addToStock(trumpet);
+        shop.addToStock(violin);
+        shop.sellItem(violin);
+        assertEquals(3, shop.countStockItems());
+        assertEquals(600.0, shop.getWallet(), 0.01);
+    }
+
+    @Test
+    public void canSellItemNotOnStock() {
+        shop.addToStock(guitar2);
+        assertEquals("This item is not in stock!", shop.sellItem(guitar));
+        assertEquals(0, shop.getWallet(), 0.01);
+        assertEquals(1, shop.countStockItems(), 0.01);
+    }
 
 }
