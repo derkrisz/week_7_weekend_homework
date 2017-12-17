@@ -1,6 +1,6 @@
 package Instruments;
 
-public class Piano extends Instrument implements IPlay {
+public class Piano extends Instrument implements IPlay, ISell {
 
     private String pianoType;
 
@@ -14,4 +14,10 @@ public class Piano extends Instrument implements IPlay {
         return "ti ti ti";
     }
 
+    @Override
+    public double calculateMarkup() {
+        double margin = getSellPrice()-getBuyPrice();
+        double markup = (margin-getBuyPrice()*100);
+        return markup;
+    }
 }

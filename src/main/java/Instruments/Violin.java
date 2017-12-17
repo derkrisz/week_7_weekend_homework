@@ -1,6 +1,6 @@
 package Instruments;
 
-public class Violin extends Instrument implements IPlay {
+public class Violin extends Instrument implements IPlay, ISell {
 
     private int stringsNumber;
 
@@ -12,5 +12,12 @@ public class Violin extends Instrument implements IPlay {
     @Override
     public String play() {
         return "trii trii";
+    }
+
+    @Override
+    public double calculateMarkup() {
+        double margin = getSellPrice()-getBuyPrice();
+        double markup = (margin-getBuyPrice()*100);
+        return markup;
     }
 }

@@ -1,6 +1,6 @@
 package Instruments;
 
-public class Trumpet extends Instrument implements IPlay {
+public class Trumpet extends Instrument implements IPlay, ISell {
 
     private int valvesNumber;
     private int size;
@@ -15,6 +15,13 @@ public class Trumpet extends Instrument implements IPlay {
     @Override
     public String play() {
         return "troom trooom";
+    }
+
+    @Override
+    public double calculateMarkup() {
+        double margin = getSellPrice()-getBuyPrice();
+        double markup = (margin-getBuyPrice()*100);
+        return markup;
     }
 
 

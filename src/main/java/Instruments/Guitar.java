@@ -1,6 +1,6 @@
 package Instruments;
 
-public class Guitar extends Instrument implements IPlay {
+public class Guitar extends Instrument implements IPlay, ISell {
 
     private int stringsNumber;
     private String guitarType;
@@ -21,5 +21,12 @@ public class Guitar extends Instrument implements IPlay {
 
     public boolean isRightHanded() {
         return rightHanded;
+    }
+
+    @Override
+    public double calculateMarkup() {
+        double margin = getSellPrice()-getBuyPrice();
+        double markup = (margin-getBuyPrice()*100);
+        return markup;
     }
 }
