@@ -29,4 +29,5 @@ public abstract class Instrument {
     public InstrumentType getType() {
         return type;
     }
+
 }
