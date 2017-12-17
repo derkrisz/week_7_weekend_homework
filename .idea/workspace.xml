@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0943c40c-b1fb-4031-b5d0-bd8c8daa737d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Instruments/Guitar.class" afterPath="$PROJECT_DIR$/out/production/classes/Instruments/Guitar.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Instruments/Piano.class" afterPath="$PROJECT_DIR$/out/production/classes/Instruments/Piano.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Instruments/Trumpet.class" afterPath="$PROJECT_DIR$/out/production/classes/Instruments/Trumpet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Instruments/Violin.class" afterPath="$PROJECT_DIR$/out/production/classes/Instruments/Violin.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/InstrumentTest.class" afterPath="$PROJECT_DIR$/out/test/classes/InstrumentTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments/Guitar.java" afterPath="$PROJECT_DIR$/src/main/java/Instruments/Guitar.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments/ISell.java" afterPath="$PROJECT_DIR$/src/main/java/Instruments/ISell.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments/Piano.java" afterPath="$PROJECT_DIR$/src/main/java/Instruments/Piano.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments/Trumpet.java" afterPath="$PROJECT_DIR$/src/main/java/Instruments/Trumpet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments/Violin.java" afterPath="$PROJECT_DIR$/src/main/java/Instruments/Violin.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InstrumentTest.java" afterPath="$PROJECT_DIR$/src/test/java/InstrumentTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java" afterPath="$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -78,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Trumpet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Trumpet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/Trumpet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding>
                 <element signature="e#504#505#0" expanded="true" />
                 <element signature="e#541#542#0" expanded="true" />
@@ -107,11 +96,51 @@
       <file leaf-file-name="InstrumentTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InstrumentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+            <state relative-caret-position="167">
+              <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Accessories.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Shop/Accessories.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessoriesType.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Shop/AccessoriesType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/ISell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InstrumentType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,9 +150,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -415,7 +444,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instruments/IPlay.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instruments/Instrument.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instruments/Violin.java" />
@@ -424,6 +452,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Instruments/Guitar.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instruments/ISell.java" />
         <option value="$PROJECT_DIR$/src/test/java/InstrumentTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Shop/InstrumentAccessories.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Shop/AccessoriesType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Shop/Accessories.java" />
       </list>
     </option>
   </component>
@@ -481,6 +513,14 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Instruments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RaysMusicExchange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework_rays_music_exchange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RaysMusicExchange" type="b2602c69:ProjectViewProjectNode" />
@@ -796,14 +836,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/IPlay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -823,16 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InstrumentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/Instrument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -846,14 +868,6 @@
             <element signature="e#751#752#0" expanded="true" />
             <element signature="e#843#844#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/ISell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,12 +897,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/Trumpet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
           <folding>
             <element signature="e#504#505#0" expanded="true" />
             <element signature="e#541#542#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InstrumentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/ISell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Instruments/InstrumentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Shop/Accessories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Shop/AccessoriesType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
