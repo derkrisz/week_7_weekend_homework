@@ -1,7 +1,6 @@
 package Shop;
 
 import Instruments.ISell;
-import Instruments.Trumpet;
 
 import java.util.ArrayList;
 
@@ -30,4 +29,13 @@ public class Shop {
     public void clearStock() {
         stock.clear();
     }
+
+    public double fullEarnings() {
+        double fullearnings = 0.0;
+        for (ISell item : stock) {
+            fullearnings += item.calculateMarkup();
+        }
+        return fullearnings;
+    }
+
 }

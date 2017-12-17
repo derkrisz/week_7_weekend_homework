@@ -80,5 +80,12 @@ public class ShopTest {
         assertEquals(0, shop.countStockItems());
     }
 
+    @Test
+    public void getFullEarnings() {
+        shop.addToStock(guitar2);
+        shop.addToStock(guitar);
+        assertEquals(66.6, shop.fullEarnings(), 0.1);
+    }
+
 
 }
