@@ -87,5 +87,20 @@ public class ShopTest {
         assertEquals(66.6, shop.fullEarnings(), 0.1);
     }
 
+    @Test
+    public void getFullProfit() {
+        shop.addToStock(guitar2);
+        shop.addToStock(trumpet);
+        shop.addToStock(violin);
+        shop.addToStock(musicSheet);
+        shop.addToStock(trumpetCleaner);
+        shop.addToStock(violinStrings);
+        shop.addToStock(guitar);
+        shop.addToStock(guitarStrings);
+        shop.addToStock(pianoWax);
+        shop.addToStock(piano);
+        assertEquals(1165.0, shop.totalProfit(), 0.01);
+    }
+
 
 }

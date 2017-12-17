@@ -38,4 +38,12 @@ public class Shop {
         return fullearnings;
     }
 
+    public double totalProfit() {
+        double totalProfit = 0.0;
+        for (ISell item : stock) {
+            totalProfit += item.calculateProfit();
+        }
+        return totalProfit;
+    }
+
 }
