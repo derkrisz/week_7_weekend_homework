@@ -43,7 +43,6 @@ public class InstrumentTest {
 
     @Test
     public void checkInstrumentMarkups() {
-        guitar.guitarCheaperIfLeftHanded();
         assertEquals(33.3, guitar.calculateMarkup(), 0.1);
         assertEquals(33.3, guitar2.calculateMarkup(), 0.1);
         assertEquals(44.4, piano.calculateMarkup(),0.1);
