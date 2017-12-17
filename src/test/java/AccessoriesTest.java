@@ -31,4 +31,10 @@ public class AccessoriesTest {
         assertEquals(100, musicSheet.calculateMarkup(),0.1);
 
     }
+
+    @Test
+    public void accessoriesHasProfit() {
+        assertEquals(10.0, guitarStrings.calculateProfit(), 0.01);
+        assertEquals(20.0, pianoWax.calculateProfit(), 0.01);
+    }
 }

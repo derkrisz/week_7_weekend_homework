@@ -26,5 +26,11 @@ public class Trumpet extends Instrument implements IPlay, ISell {
         return markup;
     }
 
+    @Override
+    public double calculateProfit() {
+        double profit = getSellPrice()-getBuyPrice();
+        return profit;
+    }
+
 
 }

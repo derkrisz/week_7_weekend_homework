@@ -31,13 +31,13 @@ public class InstrumentTest {
 
     @Test
     public void cheaperLeftHandedGuitar() {
-        guitar.guitarCheaperIfLeftHanded();
+        guitar.getGuitarPrice();
         assertEquals(400, guitar.getSellPrice(), 0.01);
     }
 
     @Test
     public void samePriceGuitarRightHanded() {
-        guitar2.guitarCheaperIfLeftHanded();
+        guitar2.getGuitarPrice();
         assertEquals(800, guitar2.getSellPrice(), 0.01);
     }
 
@@ -48,6 +48,12 @@ public class InstrumentTest {
         assertEquals(44.4, piano.calculateMarkup(),0.1);
         assertEquals(75, trumpet.calculateMarkup(), 0.1);
         assertEquals(20, violin.calculateMarkup(), 0.1);
+    }
+
+    @Test
+    public void checkInstrumentProfit() {
+        assertEquals(100, guitar.calculateProfit(), 0.01);
+        assertEquals(200, guitar2.calculateProfit(), 0.01);
     }
 
 }

@@ -25,20 +25,26 @@ public class Guitar extends Instrument implements IPlay, ISell {
         return rightHanded;
     }
 
-    public double guitarCheaperIfLeftHanded() {
+    public void getGuitarPrice() {
         if (isRightHanded() == false ) {
             double cheaperPrice = getSellPrice()*0.8;
             setSellPrice(cheaperPrice);
         }
-        return getSellPrice();
     }
 
     @Override
     public double calculateMarkup() {
-        guitarCheaperIfLeftHanded();
+        getGuitarPrice();
         double margin = getSellPrice()-getBuyPrice();
         double markup = (margin/getBuyPrice()*100.0);
         return markup;
+    }
+
+    @Override
+    public double calculateProfit() {
+        getGuitarPrice();
+        double profit = getSellPrice()-getBuyPrice();
+        return profit;
     }
 
 

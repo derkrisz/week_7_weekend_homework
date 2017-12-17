@@ -22,4 +22,10 @@ public class Violin extends Instrument implements IPlay, ISell {
         double markup = (margin/getBuyPrice()*100);
         return markup;
     }
+
+    @Override
+    public double calculateProfit() {
+        double profit = getSellPrice()-getBuyPrice();
+        return profit;
+    }
 }
