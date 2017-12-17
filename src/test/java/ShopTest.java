@@ -3,6 +3,8 @@ import Shop.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class ShopTest {
 
     Shop shop;
@@ -30,6 +32,52 @@ public class ShopTest {
         pianoWax = new Accessories(AccessoriesType.PIANOWAX, 25.0, 45.0);
         trumpetCleaner = new Accessories(AccessoriesType.TRUMPETCLEANER, 15.0, 25.0);
         musicSheet = new Accessories(AccessoriesType.MUSICSHEET, 10.0, 20.0);
+    }
+
+    @Test
+    public void StockIsEmpty() {
+        assertEquals(0, shop.countStockItems());
+    }
+
+    @Test
+    public void canAddtoStock() {
+        shop.addToStock(guitar);
+        shop.addToStock(guitarStrings);
+        shop.addToStock(pianoWax);
+        shop.addToStock(piano);
+        assertEquals(4, shop.countStockItems());
+    }
+
+    @Test
+    public void canRemoveFromStock() {
+        shop.addToStock(guitar2);
+        shop.addToStock(trumpet);
+        shop.addToStock(violin);
+        shop.addToStock(musicSheet);
+        shop.addToStock(trumpetCleaner);
+        shop.addToStock(violinStrings);
+        assertEquals(6, shop.countStockItems());
+        shop.removeFromStock(trumpet);
+        shop.removeFromStock(trumpetCleaner);
+        assertEquals(4, shop.countStockItems());
+
+    }
+
+    @Test
+    public void canClearStock() {
+        shop.addToStock(guitar2);
+        shop.addToStock(trumpet);
+        shop.addToStock(violin);
+        shop.addToStock(musicSheet);
+        shop.addToStock(trumpetCleaner);
+        shop.addToStock(violinStrings);
+        shop.addToStock(guitar);
+        shop.addToStock(guitarStrings);
+        shop.addToStock(pianoWax);
+        shop.addToStock(piano);
+        assertEquals(10, shop.countStockItems());
+        shop.clearStock();
+        assertEquals(0, shop.countStockItems());
     }
 
 
