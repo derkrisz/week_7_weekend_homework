@@ -1,5 +1,7 @@
 package Instruments;
 
+import java.io.PrintStream;
+
 public class Guitar extends Instrument implements IPlay, ISell {
 
     private int stringsNumber;
@@ -34,7 +36,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
     @Override
     public double calculateMarkup() {
         double margin = getSellPrice()-getBuyPrice();
-        double markup = (margin-getBuyPrice()*100);
+        double markup = (margin/getBuyPrice()*100.0);
         return markup;
     }
 

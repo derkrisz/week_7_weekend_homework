@@ -40,4 +40,15 @@ public class InstrumentTest {
         guitar2.guitarCheaperIfLeftHanded();
         assertEquals(800, guitar2.getSellPrice(), 0.01);
     }
+
+    @Test
+    public void checkInstrumentMarkups() {
+        guitar.guitarCheaperIfLeftHanded();
+        assertEquals(33.3, guitar.calculateMarkup(), 0.1);
+        assertEquals(33.3, guitar2.calculateMarkup(), 0.1);
+        assertEquals(44.4, piano.calculateMarkup(),0.1);
+        assertEquals(75, trumpet.calculateMarkup(), 0.1);
+        assertEquals(20, violin.calculateMarkup(), 0.1);
+    }
+
 }

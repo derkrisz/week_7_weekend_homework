@@ -1,5 +1,7 @@
 package Instruments;
 
+import java.io.PrintStream;
+
 public class Piano extends Instrument implements IPlay, ISell {
 
     private String pianoType;
@@ -17,7 +19,7 @@ public class Piano extends Instrument implements IPlay, ISell {
     @Override
     public double calculateMarkup() {
         double margin = getSellPrice()-getBuyPrice();
-        double markup = (margin-getBuyPrice()*100);
+        double markup = (margin/getBuyPrice()*100);
         return markup;
     }
 }
