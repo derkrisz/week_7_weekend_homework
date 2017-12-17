@@ -30,4 +30,7 @@ public abstract class Instrument {
         return type;
     }
 
+    public void setSellPrice(double sellPrice) {
+        this.sellPrice = sellPrice;
+    }
 }

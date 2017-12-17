@@ -7,6 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class InstrumentTest {
 
     Guitar guitar;
+    Guitar guitar2;
     Piano piano;
     Trumpet trumpet;
     Violin violin;
@@ -14,6 +15,7 @@ public class InstrumentTest {
     @Before
     public void before() {
         guitar = new Guitar("wood", "brown", "Fender", 300.0, 500.0, InstrumentType.STRINGS, 5, "acoustic", false);
+        guitar2 = new Guitar("plastic", "blue", "Les Paul", 600.0, 800.0, InstrumentType.STRINGS, 7, "electric", true);
         piano = new Piano("wood", "black", "Yamaha", 900.0, 1300.0, InstrumentType.KEYBOARD, "classic");
         trumpet = new Trumpet("brass", "gold", "Cecilio", 400.0, 700.0, InstrumentType.BRASS, 4, 3);
         violin = new Violin("wood", "dark brown", "Stagg", 500.0, 600.0, InstrumentType.WOODWIND, 7);
@@ -27,4 +29,15 @@ public class InstrumentTest {
         assertEquals("trii trii", violin.play());
     }
 
+    @Test
+    public void cheaperLeftHandedGuitar() {
+        guitar.guitarCheaperIfLeftHanded();
+        assertEquals(400, guitar.getSellPrice(), 0.01);
+    }
+
+    @Test
+    public void samePriceGuitarRightHanded() {
+        guitar2.guitarCheaperIfLeftHanded();
+        assertEquals(800, guitar2.getSellPrice(), 0.01);
+    }
 }
