@@ -18,4 +18,8 @@ public class Guitar extends Instrument implements IPlay {
     public String play() {
         return "dzzz dzzz";
     }
+
+    public boolean isRightHanded() {
+        return rightHanded;
+    }
 }
