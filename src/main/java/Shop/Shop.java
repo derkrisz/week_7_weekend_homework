@@ -37,11 +37,11 @@ public class Shop {
     }
 
     public double fullEarnings() {
-        double fullearnings = 0.0;
+        double fullEarnings = 0.0;
         for (ISell item : stock) {
-            fullearnings += item.calculateMarkup();
+            fullEarnings += item.calculateMarkup();
         }
-        return fullearnings;
+        return fullEarnings;
     }
 
     public double totalProfit() {

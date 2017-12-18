@@ -114,7 +114,7 @@ public class ShopTest {
     }
 
     @Test
-    public void canSellItemNotOnStock() {
+    public void cantSellItemNotOnStock() {
         shop.addToStock(guitar2);
         assertEquals("This item is not in stock!", shop.sellItem(guitar));
         assertEquals(0, shop.getWallet(), 0.01);
